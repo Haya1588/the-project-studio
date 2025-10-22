@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Project Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body class="is-dark">
+  <!-- ====== Intro: رسم خطين + ظهور لوقو أبيض ====== -->
+  <div id="intro" aria-hidden="true">
+    <svg class="intro-lines" viewBox="0 0 120 200" preserveAspectRatio="xMidYMid meet">
+      <line x1="45" y1="16" x2="45" y2="184" class="thick"/>
+      <line x1="70" y1="16" x2="70" y2="184" class="thin"/>
+    </svg>
+    <img id="introLogo" class="intro-logo" alt="The Project Studio" />
+  </div>
+
+  <!-- ====== Navigation ====== -->
+  <header id="topNav" class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand" aria-label="The Project Studio">
+        <img class="logo-dark"  src="assets/logo-12.png" alt="logo dark">
+        <img class="logo-light" id="navLogoLight" alt="logo light">
+      </a>
+      <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#why">لماذا نحن</a>
+        <a href="#about">من نحن</a>
+        <a href="#vision">رؤيتنا</a>
+        <a href="#mission">رسالتنا</a>
+        <a href="#clients">عملاؤنا</a>
+        <a href="#contact" class="cta-sm">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO Identity (أبيض) ====== -->
+  <section id="home" class="hero-identity motif" data-nav-onwhite>
+    <div class="identity-wrap">
+      <img src="assets/IDENTITY-12.png" class="identity-img" alt="identity motif">
+      <div class="identity-headlines">
+        <h1 class="en-top">WHERE EVERY</h1>
+        <h1 class="en-bottom">PROJECT BEGINS</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HERO Dark ====== -->
+  <section id="darkStart" class="hero-main motif">
+    <div class="container center">
+      <h2 class="ar-hero">نصنع <span>هويتك</span> ونبني <span>حضورك</span> بمنهجية تُترجم للنتائج.</h2>
+      <p class="lead">ندير الصورة الكاملة من الفكرة إلى التنفيذ—هوية متماسكة، تواصل فعّال، وتنفيذ بجودة.</p>
+      <div class="buttons">
+        <a href="#contact" class="btn soft-fill">تواصل معنا</a>
+        <a href="#about"   class="btn soft">اعرف عنّا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Ticker (سطران، آمن بدون تداخل) ====== -->
+  <section class="ticker-band motif" aria-hidden="true">
+    <div class="ticker-line t1" data-speed="24">
+      <ul class="line">
+        <li>THE PROJECT STUDIO</li><li>•</li><li>BRANDING</li><li>•</li><li>UI/UX</li><li>•</li><li>WEB</li><li>•</li><li>CONTENT</li><li>•</li><li>ADS</li><li>•</li>
+      </ul>
+      <ul class="line clone" aria-hidden="true">
+        <li>THE PROJECT STUDIO</li><li>•</li><li>BRANDING</li><li>•</li><li>UI/UX</li><li>•</li><li>WEB</li><li>•</li><li>CONTENT</li><li>•</li><li>ADS</li><li>•</li>
+      </ul>
+    </div>
+    <div class="ticker-line t2" data-speed="26">
+      <ul class="line">
+        <li>IDENTITY</li><li>•</li><li>STRATEGY</li><li>•</li><li>CAMPAIGNS</li><li>•</li><li>FROM RIYADH TO THE WORLD</li><li>•</li>
+      </ul>
+      <ul class="line clone" aria-hidden="true">
+        <li>IDENTITY</li><li>•</li><li>STRATEGY</li><li>•</li><li>CAMPAIGNS</li><li>•</li><li>FROM RIYADH TO THE WORLD</li><li>•</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== لماذا لسنا الاستوديو العادي؟ + نقاط حيّة ====== -->
+  <section id="why" class="why motif">
+    <div class="container why-grid">
+      <div class="why-sticky">
+        <h2 class="why-title">لماذا لسنا<br>الاستوديو العادي؟</h2>
+        <p class="why-sub">منهجية متكاملة—فهم عميق، تنفيذ واحد، وشراكة طويلة.</p>
+      </div>
+
+      <div class="why-list-wrap simple" id="whyRailWrap">
+        <span class="why-rail"></span>
+        <div class="why-list" id="whyList">
+          <article class="why-item">
+            <h3>إدارة شاملة للمشروع</h3>
+            <p>صورة كاملة من الفكرة إلى الهوية وحتى التنفيذ—تحت سقف واحد.</p>
+          </article>
+          <article class="why-item">
+            <h3>هوية أصلية لا قوالب</h3>
+            <p>حلول مبنية على فهم عميق للسياق والجمهور، ليست قص ولصق.</p>
+          </article>
+          <article class="why-item">
+            <h3>تجربة مستخدم وواجهات فعّالة</h3>
+            <p>مواقع وصفحات هبوط سريعة، متجاوبة، ومحوّلة.</p>
+          </article>
+          <article class="why-item">
+            <h3>محتوى وإعلانات بالأرقام</h3>
+            <p>قرارات تنطلق من البيانات وتقارير أداء تقيس التحوّل.</p>
+          </article>
+          <article class="why-item">
+            <h3>شراكة طويلة المدى</h3>
+            <p>نرافق المشروع بعد الإطلاق؛ تحسينات مستمرة وموثوقة.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== About + Vision + Mission مع “رايلين” مستقيمين يرسمان ====== -->
+  <section id="about" class="about-visions">
+
+    <div class="container">
+      <div class="about-head center">
+        <h3>من نحن</h3>
+        <p>ذا بروچكت استوديو تصميم وتسويق نقدم نموذج عمل متكامل ينعكس على المشروع من الداخل لا من الخارج. نحن لا ننجز جزءًا من العمل؛ نحن ندير الصورة الكاملة: من الفكرة إلى الهوية ومن التخطيط إلى التنفيذ. نُشرف على كل ما يخص المشروع ونقدّم حلولًا مبنية على فهم عميق تضمن خلق هوية متماسكة، تواصل فعّال، ونتائج ملموسة تنعكس على أرض الواقع.</p>
+      </div>
+
+      <!-- خط أساس + رايلين يُرسمان -->
+      <div class="rails" aria-hidden="true">
+        <span class="baseline"></span>
+        <span class="rail r1"></span>
+        <span class="rail r2"></span>
+      </div>
+
+      <div class="vm-grid">
+        <article id="vision" class="vm-card">
+          <span class="kicker">OUR VISION</span>
+          <h4>رؤيتنا</h4>
+          <span class="baseline"></span>
+          <p>أن نكون الجهة المرجعية في إدارة المشاريع المتكاملة، حيث تبدأ الفكرة وتنتهي بالتنفيذ تحت سقف واحد.</p>
+        </article>
+
+        <article id="mission" class="vm-card">
+          <span class="kicker">OUR MISSION</span>
+          <h4>رسالتنا</h4>
+          <span class="baseline"></span>
+          <p>توفير نموذج عمل شامل يمكّن العميل من تسليم مشروعه بالكامل إلى جهة واحدة تُدير الفكرة، تبني الهوية، وتُشرف على التنفيذ.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== الأعمال (زر يفتح صفحة خارجية) ====== -->
+  <section class="section motif">
+    <div class="container">
+      <div class="works-box">
+        <div class="works-bg"></div>
+        <div class="works-content">
+          <div>
+            <h3>أعمالنا</h3>
+            <p>تصفّح نماذج مختارة من أعمال الهوية، المواقع، الحملات، والمحتوى.</p>
+            <a class="btn soft-fill" id="worksBtn" href="works.html">تصفّح الأعمال</a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== عملاؤنا (شريط لوجوهات يتوقف عند الهوفر) ====== -->
+  <section id="clients" class="section motif">
+    <div class="container center">
+      <h3>عملاؤنا</h3>
+    </div>
+    <div class="marquee">
+      <div id="clientsTrack" class="track">
+        <!-- تُحقن الصور تلقائياً بالـJS من C 1-12.png … -->
+      </div>
+    </div>
+  </section>
+
+<!-- ====== تواصل ====== -->
+<section id="contact" class="section contact motif">
+  <div class="container center">
+    <h3>تواصل معنا</h3>
+    <p>يسعدنا تواصلك عبر القنوات التالية:</p>
+
+    <div class="contact-row">
+      <!-- واتساب برسالة جاهزة: عدّلي الرقم لصيغة دولية بدون + -->
+      <a class="btn soft-fill"
+   href="https://api.whatsapp.com/send?phone=966507563808&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20The%20Project%20Studio%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A"
+   target="_blank" rel="noopener">واتساب</a>
+
+
+      <!-- بريد إلكتروني برسالة جاهزة: عدّلي الإيميل لو لزم -->
+      <a class="btn soft"
+         href="mailto:the.project.stu@gmail.com?subject=%5BTPS%5D%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84&body=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20The%20Project%20Studio%D8%8C%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A.%0A%0A%D8%A7%D9%84%D8%A7%D8%B3%D9%85%3A%20%0A%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%3A%20%0A%D9%88%D8%B5%D9%81%20%D9%85%D8%AE%D8%AA%D8%B5%D8%B1%3A%20%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D9%85%D8%B1%D8%AC%D8%B9%D9%8A%20%28%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%D9%8A%29%3A%20"
+         rel="noopener" aria-label="إرسال بريد إلكتروني">
+        بريد إلكتروني
+      </a>
+
+      <!-- إنستغرام -->
+      <a class="btn soft"
+         href="https://www.instagram.com/theproject__studio?igsh=ZnA3MDJrcjZzOGho&utm_source=qr"
+         target="_blank" rel="noopener" aria-label="زيارة إنستغرام">
+        إنستغرام
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ====== Footer احترافي ====== -->
+  <footer class="footer">
+    <div class="container footer-grid pro">
+      <div class="brand">
+        <img class="logo-light" id="footerLogoLight" alt="logo light">
+        <div class="btxt">
+          <strong>The Project Studio</strong>
+          <small>Design & Marketing</small>
+        </div>
+      </div>
+
+      <ul class="f-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#why">لماذا نحن</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#clients">عملاؤنا</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+
+      <div class="rights">
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/theproject__studio?igsh=ZnA3MDJrcjZzOGho&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li>
+          <li>
+  <a href="https://www.linkedin.com/in/the-project-studio-098771297"
+     target="_blank" rel="noopener noreferrer" aria-label="LinkedIn — The Project Studio">
+    LinkedIn
+  </a>
+</li>
+
+          
+        </ul>
+        <small>© جميع الحقوق محفوظة — The Project Studio</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
